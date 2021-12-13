@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     PageAdapter pageAdapter;
     Toolbar mtoolbar;
 
+    String api = "fc8d387091364429a90a396120707d4f";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
