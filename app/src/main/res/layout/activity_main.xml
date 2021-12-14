@@ -4,33 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:keepScreenOn="true"
     tools:context=".MainActivity">
 
-   <androidx.appcompat.widget.Toolbar
-       android:layout_width="match_parent"
-       android:layout_height="?attr/actionBarSize"
-       android:layout_marginTop="0dp"
-       android:background="@color/white"
-       android:id="@+id/toolbar">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="@color/white">
 
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:gravity="center_vertical">
-
-
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="New Feed"
-               android:textColor="#0389F4"
-               android:textSize="20dp"
-               android:textStyle="bold">
-
-           </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#978BC34A"
+            android:backgroundTint="#448AFF"
+            android:duplicateParentState="true"
+            android:fadeScrollbars="false"
+            android:filterTouchesWhenObscured="true"
+            android:foreground="@color/material_on_primary_emphasis_medium"
+            android:gravity="center_vertical"
+            android:rotationX="45">
 
 
-       </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="158dp"
+                android:layout_marginBottom="24dp"
+                android:linksClickable="false"
+                android:longClickable="true"
+                android:text="New Feed"
+                android:textAlignment="gravity"
+                android:textColor="#373F6A"
+                android:textColorHint="#448AFF"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:typeface="serif">
+
+            </TextView>
+
+
+        </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.tabs.TabLayout
@@ -38,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_below="@+id/toolbar"
-        android:layout_marginTop="-2dp"
+        android:layout_marginTop="3dp"
         android:backgroundTint="@color/white"
         app:tabIndicatorHeight="3.5dp"
         app:tabMode="scrollable"
@@ -97,15 +118,13 @@
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragmentcontainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/include"
-        android:layout_marginTop="0dp"
-        android:id="@+id/fragmentcontainer">
+        android:layout_marginTop="5dp">
 
     </androidx.viewpager.widget.ViewPager>
-
-
 
 
 </RelativeLayout>
