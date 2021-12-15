@@ -48,11 +48,15 @@
                 android:textStyle="normal|bold"
                 android:typeface="serif">
 
+
             </TextView>
 
 
+
         </RelativeLayout>
+
     </androidx.appcompat.widget.Toolbar>
+
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/include"
@@ -122,7 +126,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/include"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        tools:ignore="SpeakableTextPresentCheck">
 
     </androidx.viewpager.widget.ViewPager>
 
